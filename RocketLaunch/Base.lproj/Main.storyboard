@@ -22,6 +22,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="powerIcon"/>
+                                <connections>
+                                    <action selector="powerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PR4-RW-Y1D"/>
+                                </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zp0-jq-EGQ">
                                 <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
@@ -49,6 +52,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="rocketContentView" destination="Zp0-jq-EGQ" id="iBJ-Vr-2Xb"/>
+                        <outlet property="rocketImageView" destination="r48-Jg-LJp" id="O31-Fk-7XB"/>
+                        <outlet property="successLabel" destination="Ace-Rj-fM3" id="H52-Ag-3Rn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
